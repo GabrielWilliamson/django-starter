@@ -15,10 +15,10 @@ echo "Step 3: Building static files (npm run build)"
 npm run build
 
 echo "Step 4: Collecting static files"
-python3 manage.py collectstatic --noinput --clear
+uv run manage.py collectstatic --noinput --clear
 
 echo "Step 5: Applying database migrations"
-python3 manage.py migrate
+uv run manage.py migrate
 
 echo "===================="
 echo "✅ BUILD PROCESS COMPLETED SUCCESSFULLY"
