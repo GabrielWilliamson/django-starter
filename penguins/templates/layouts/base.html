@@ -1,0 +1,14 @@
+{% load django_vite static %}
+<html class="light">
+    <head>
+        {% vite_hmr_client %} {% vite_asset 'static/js/main.js'%}
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <title>Django Starter</title>
+    </head>
+    <body>
+        {% block slot %} {% endblock %}
+    </body>
+</html>
