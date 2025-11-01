@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pets.wsgi.application'
+WSGI_APPLICATION = 'pets.wsgi.app'
 
 
 # Database
