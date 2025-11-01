@@ -6,7 +6,7 @@ echo "STARTING BUILD PROCESS"
 echo "===================="
 
 echo "Step 1: Installing Python dependencies"
-uv install --python=python3
+uv sync
 
 echo "Step 2: Installing Node.js dependencies"
 npm install
